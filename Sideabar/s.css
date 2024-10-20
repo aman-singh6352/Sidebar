@@ -1,0 +1,360 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+    color: white;
+    font-family: "Nunito", serif;
+    overflow: hidden;
+}
+.main {
+    display: flex;
+    height: 100vh;
+}
+.sidebar {
+    background-color: black;
+    width: 350px;
+    position: fixed;
+    height: 100vh;
+    border-radius: 1rem;
+    font-size: 18px;
+}
+.content {
+    background-color: #121212d2;
+    margin-left: 350px;
+    flex: 1;
+    overflow: auto;
+    border-radius: 1rem;
+}
+.music-player {
+    background-color: black;
+    position: fixed;
+    bottom: 0px;
+    height: 80px;
+    width: 100%;
+    display: flex;
+}
+
+.nav-option a {
+    text-decoration: none;
+    color: white;
+    margin-left: 30px;
+    vertical-align: super;
+}
+.nav {
+    background-color: #121212d7;
+    margin: 8px 8px;
+    padding: 20px 20px;
+    border-radius: 1rem;
+}
+.nav-option:first-child {
+    margin-top: 10px;
+    margin-bottom: 17px;
+    margin-left: 15px;
+}
+
+.nav-option:last-child {
+    margin-top: 25px;
+    margin-bottom: 0px;
+    margin-left: 15px;
+}
+.home {
+    position: absolute;
+    top: 42px;
+    font-weight: 750;
+}
+.search {
+    position: absolute;
+    left: 74px;
+}
+.library {
+    background-color: #121212d2;
+    height: 900px;
+    margin: 0px 8px;
+    border-radius: 1rem;
+}
+
+.your-library {
+    max-width: 334px;
+    margin: 20px 5px 15px 15px;
+    padding: 20px 0px 10px 20px;
+}
+
+.your-library a:first-child {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.your-library a:nth-child(2) {
+    text-decoration: none;
+    margin-left: 1rem;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.your-library a:hover {
+    color: white;
+}
+
+#plus {
+    position: absolute;
+    left: 280px;
+    margin-top: -5px;
+    padding: 16px 6px;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+#plus:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+}
+
+.playlist {
+    padding: 16px 20px;
+    background-color: rgba(255, 255, 255, 0.07);
+    border-radius: 10px;
+    margin: 8px 7px 8px 7px;
+}
+
+.h4_playlist {
+    padding-bottom: 8px;
+}
+
+.p_playlist {
+    margin-bottom: 20px;
+}
+
+.badge {
+    border: none;
+    border-radius: 100px;
+    padding: 0.25rem 1rem;
+    padding: 5px 14px;
+    font-weight: 550;
+    height: 2rem;
+    width: fit-content;
+    cursor: pointer;
+}
+
+.badge:hover {
+    transform: scale(1.05);
+}
+.browse-podcasts {
+    padding: 16px 20px;
+    background-color: rgba(255, 255, 255, 0.07);
+    border-radius: 10px;
+    margin: 8px 7px 8px 7px;
+}
+
+.sticky_navbar {
+    position: sticky;
+    top: 0;
+    background-color: #121212;
+    margin: 0px 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0px;
+    z-index: 1;
+}
+
+.arrow i:first-child{
+    margin-right: 5px;
+    padding: 14px 10px 14px 8px;
+    color: rgba(255, 255, 255, 0.7);
+    border-radius: 50%;
+    background-color: black;
+    cursor: pointer;
+}
+
+.arrow i:last-child{
+    margin-left: 5px;
+    padding: 14px 8px 14px 10px;
+    color: rgba(255, 255, 255, 0.7);
+    border-radius: 50%;
+    background-color: black;
+    cursor: pointer;
+}
+.arrow {
+    margin-left: 15px;
+}
+.right-nav-content button {
+    margin-left: 10px;
+}
+.install {
+    background-color: black;
+    color: white;
+}
+.user {
+    margin-left: 0.7rem;
+    padding: 16px 8px;
+    border-radius: 50%;
+    background-color: black;
+    cursor: pointer;
+}
+
+.cards {
+    margin: 0px 2rem;
+}
+
+.card {
+    margin: 10px 0px;
+    padding: 13px 13px 18px 13px;
+    width: fit-content;
+}
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+.card:hover {
+    background-color: rgba(35, 35, 35, 0.5);
+    border-radius: 8px;
+}
+
+.cards a {
+    text-decoration: none;
+    color: white;
+}
+.card img {
+    height: 200px;
+    width: 180px;
+    border-radius: 8px;
+}
+.card-title {
+    font-size: 18px;
+    font-weight: 700;
+    padding: 8px 0px;
+}
+
+.card-info {
+    opacity: 0.8;
+}
+
+.cards h2 {
+    width: fit-content;
+    display: inline;
+    padding: 18px 0px;
+}
+
+.cards h2:hover {
+    text-decoration-line: underline;
+}
+
+footer {
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.line {
+    width: 90%;
+    height: 30%;
+    border-top: 1px solid white;
+    opacity: 0.4;
+}
+
+.album {
+    width: 25%;
+    display: flex;
+    padding: 0px 0px 0px 20px;
+}    
+
+.album .image {
+    margin: 10px 0px 10px 9px;
+}
+
+.album .icons {
+    color: white;
+    padding: 1.5rem;
+}
+
+.song-name {
+    padding: 13px 0px 8px 15px;
+}
+
+.song-name p{
+    font-size: 12px;
+}
+
+.heart {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.player-control {
+    width: 50%;
+    justify-content: center;
+}
+
+.player-control i {
+    margin-top: 10px;
+    padding: 1.2rem 1.2rem 1.2rem 1.2rem;
+    opacity: 0.7;
+}
+
+.player-control i:hover {
+    opacity: 1;
+}
+
+.player-control-button {
+    text-align: center;
+}
+
+.playback-bar {
+    margin-top: 2px;
+    text-align: center;
+}
+
+.progress-bar {
+    width: 28rem;
+    appearance: none;
+    cursor: pointer;
+}
+
+.progress-bar::-webkit-slider-runnable-track {
+    height: 0.2rem;
+    border-radius: 50%;
+}
+
+.progress-bar::-webkit-slider-thumb {
+    appearance: none;
+    height: 1rem;
+    width: 1rem;
+    background-color: #1bd760;
+    border-radius: 50%;
+    margin-top: -5.5px;
+}
+
+.extra {
+    width: 25%;
+}
+
+.volume {
+    color: white;
+    margin-top: 30px;
+    margin-right: 3px;
+    position: relative;
+    top: 5px;
+}
+.sound-bar {
+    appearance: none;
+    cursor: pointer;
+    width: 10rem;
+}
+
+.sound-bar::-webkit-slider-runnable-track {
+    height: 0.2rem;
+    border-radius: 50%;
+    /* margin-bottom: 7px; */
+}
+
+.sound-bar::-webkit-slider-thumb {
+    appearance: none;
+    height: 1rem;
+    width: 1rem;
+    background-color: #1bd760;
+    border-radius: 50%;
+    margin-top: -6px;
+}
